@@ -14,30 +14,30 @@
 <body>
 <header class="page-header">
      <div class="container header-box">
-        <a class="header-logo" href="./index.html"><span>Web</span>Studio</a>
-        <ul class="nav-list list">
-            <li class="nav-item">
-                <a class="nav-link active" href="./index.html">Студия</a>
+        <a class="logo" href="./index.html"><span class="logo__web">Web</span>Studio</a>
+        <ul class="nav list">
+            <li class="nav__item">
+                <a class="nav__link active" href="./index.html">Студия</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./portfolio.html">Портфолио</a>
+            <li class="nav__item">
+                <a class="nav__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="">Контакты</a>
+            <li class="nav__item">
+                <a class="nav__link" href="">Контакты</a>
             </li>
         </ul>      
-        <ul class="contact-list list">
-            <li class="contact-item">
-                <a class="contact-mail" href="mailto:info@devstudio.com">
-                    <svg class="contact-icon" width="16" height="12">
+        <ul class="contact list">
+            <li class="contact__item">
+                <a class="contact__link" href="mailto:info@devstudio.com">
+                    <svg class="contact__icon" width="16" height="12">
                         <use href="./images/sprite.svg#icon-envelope"></use>
                     </svg>
                     info@devstudio.com
                 </a>
             </li>
-            <li class="contact-item">
-                <a class="contact-tel" href="tel:+380961111111">
-                    <svg  class="contact-icon" width="16" height="12">
+            <li class="contact__item">
+                <a class="contact__link" href="tel:+380961111111">
+                    <svg  class="contact__icon" width="16" height="12">
                         <use href="./images/sprite.svg#icon-Vector"></use>
                     </svg>
                     +380 96 111 11 11
@@ -49,62 +49,61 @@
 <main>
 <section>
      <div class="hero">
-         <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-         <button type="button" class="hero-btn" data-modal-open> Заказать услугу </button>
+         <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+         <button type="button" class="hero__btnOpen" data-modal-open> Заказать услугу </button>
      </div>
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button class="btn-modal" data-modal-close>
+    <div class="hero__backdrop is-hidden" data-modal>
+        <div class="hero__modal">
+            <button class="hero__btnClose" data-modal-close>
                 <svg width="11px" height="11px">
                     <use href="./images/sprite.svg#icon-Vector-x"></use>
                 </svg>
             </button>
-            <form class="form-modal">
-                <b class="title-form">Оставьте свои данные, мы вам перезвоним</b>
-                <div class="input-box">
-                    <input class="input-form" name="name" placeholder=" ">
-                    <label class="label-form" for="name">Имя</label>
+            <form class="form">
+                <b class="form__title">Оставьте свои данные, мы вам перезвоним</b>
+                <div class="form__box">
+                    <input class="form__input" name="name" placeholder=" ">
+                    <label class="form__label" for="name">Имя</label>
 
-                    <svg class="icon-form" width="18px" height="18px">
+                    <svg class="form__icon" width="18px" height="18px">
                         <use href="./images/sprite.svg#icon-name-form-hero"></use>
                     </svg>
                 </div>
 
-                <div class="input-box">
-                    <input class="input-form" name="tel" placeholder=" ">
-                    <label class="label-form" for="tel">Телефон</label>
+                <div class="form__box">
+                    <input class="form__input" name="tel" placeholder=" ">
+                    <label class="form__label" for="tel">Телефон</label>
                     
-                    <svg class="icon-form"  width="18px" height="18px">
+                    <svg class="form__icon"  width="18px" height="18px">
                         <use href="./images/sprite.svg#icon-tel-form-hero"></use>
                     </svg>
                 </div>
 
-                <div class="input-box">
-                    <input class="input-form" name="email" placeholder=" ">
-                    <label class="label-form" name="email">Почта</label>
+                <div class="form__box">
+                    <input class="form__input" name="email" placeholder=" ">
+                    <label class="form__label" name="email">Почта</label>
                     
-                    <svg class="icon-form"  width="18px" height="18px">
+                    <svg class="form__icon"  width="18px" height="18px">
                         <use href="./images/sprite.svg#icon-mail-form-hero"></use>
                     </svg>
                 </div>
-                <div class="texteria-box">
-                    <label class="texteria-label">Коментарии</label>
-                    <textarea class="texteria-form" name="comment" id="texsteria" rows="10" placeholder="Введите текст"></textarea>
+                <div class="texteria">
+                    <label class="texteria__label">Коментарии</label>
+                    <textarea class="texteria__form" name="comment" id="texsteria" rows="10" placeholder="Введите текст"></textarea>
                 </div>
 
                 <div class="treaty">
-                    <label  class="label-checkbox">
-                        <input class="input-check" type="checkbox" name="checkbox">
+                    <label  class="treaty__checkbox">
+                        <input class="treaty_input" type="checkbox" name="checkbox">
                         
-                        <svg class="icon-check" width="16" height="15">
+                        <svg class="treaty__icon" width="16" height="15">
                             <use href="./images/sprite.svg#icon-vector-form-hero"></use>
                         </svg>
                         Соглашаюсь с рассылкой и принимаю
-                        <a class="treaty-link" href="./index.html">Условия договора</a>
+                        <a class="treaty__link" href="./index.html">Условия договора</a>
                     </label>
-                    <button type="submit" class="treaty-btn">Отправить</button>
+                    <button type="submit" class="treaty__submit">Отправить</button>
                 </div>
-
             </form>
         </div>
     </div>
@@ -112,70 +111,70 @@
     <section class="section special">
      <div class="container">
          <h2 hidden>Особенности</h2>
-         <ul class="special-list list">
-             <li class="special-item">
-                 <div  class="special-icon">
+         <ul class="special__list list">
+             <li class="special__item">
+                 <div  class="special__icon">
                      <svg width="70px" height="70px">
                          <use href="./images/sprite.svg#icon-antenna-1"></use>
                      </svg>
                  </div>
-                <h3 class="special-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-                <p class="special-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>        
+                <h3 class="special__title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+                <p class="special__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>        
             </li>
-             <li class="special-item">
-                <div  class="special-icon">
+             <li class="special__item">
+                <div  class="special__icon">
                     <svg width="70px" height="70px">
                          <use href="./images/sprite.svg#icon-clock-1"></use>
                     </svg>
                 </div>
-                <h3 class="special-title">ПУНКТУАЛЬНОСТЬ</h3>
-                <p class="special-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                <h3 class="special__title">ПУНКТУАЛЬНОСТЬ</h3>
+                <p class="special__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
              </li>
-             <li class="special-item">
-                <div  class="special-icon">
+             <li class="special__item">
+                <div  class="special__icon">
                     <svg width="70px" height="70px">
                          <use href="./images/sprite.svg#icon-diagram-1"></use>
                     </svg>
                 </div>
-                <h3 class="special-title">ПЛАНИРОВАНИЕ</h3>
-                <p class="special-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                <h3 class="special__title">ПЛАНИРОВАНИЕ</h3>
+                <p class="special__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
              </li>
-             <li class="special-item">
-                <div  class="special-icon">
+             <li class="special__item">
+                <div  class="special__icon">
                     <svg width="70px" height="70px">
                          <use href="./images/sprite.svg#icon-astronaut-1"></use>
                     </svg>
                 </div>
-                <h3 class="special-title">СОВРЕМЕНЫЕ ТЕХНОЛОГИИ</h3>
-                <p class="special-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                <h3 class="special__title">СОВРЕМЕНЫЕ ТЕХНОЛОГИИ</h3>
+                <p class="special__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
              </li>
          </ul>
      </div>
     </section>
     <section class="section">
      <div class="widget container">
-         <h2 class="widget-title">Чем мы занимаемся</h2>
-         <ul class="widget-list list">
+         <h2 class="widget__title">Чем мы занимаемся</h2>
+         <ul class="widget__list list">
              <li>
-                <div class="widget-img">
+                <div class="widget__img">
                     <img src="./images/img1.jpg" alt="Создание проэкта" width="370" height="294">
-                    <div class="widget-text">
+                    <div class="widget__text">
                         <p>ДECКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                     </div>
                 </div>
             </li>
              <li>
-                <div class="widget-img">
+                <div class="widget__img">
                     <img src="./images/img2.jpg" alt="Создание проэкта" width="370" height="294">
-                     <div class="widget-text">
+                     <div class="widget__text">
                     <p>МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
                      </div>
                 </div>
             </li>
              <li>
-                <div class="widget-img">
+                <div class="widget__img">
                     <img src="./images/img3.jpg" alt="Создание проэкта" width="370" height="294">
-                    <div class="widget-text">
+                    <div class="widget__text">
                         <p>ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                     </div>
                 </div>
